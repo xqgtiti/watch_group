@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/img_sit"
+            android:src="@mipmap/ic_accessible_black_36dp"
+            android:layout_height="wrap_content" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sit_long_on_off"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+          />
+
+        <TextView
+            android:layout_toRightOf="@id/img_sit"
+            android:id="@+id/button_dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="久坐提醒"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/img_check"
+            android:src="@mipmap/ic_build_black_36dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/check_mood"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_toRightOf="@id/img_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="心情检测"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:background="@color/titleBlue"
+        android:text="同步设置到Wear设备"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        android:layout_width="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="45dp" />
+
+
+</LinearLayout>

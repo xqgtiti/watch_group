@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <android.support.wearable.view.BoxInsetLayout
+        android:id="@+id/box_view_start_up"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg_mod6"
+        tools:deviceIds="wear">
+
+        <android.support.wearable.view.CardScrollView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom">
+
+            <android.support.wearable.view.CardFrame
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="心情如何？ \n点击图标记录吧！\n                                             . "
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+            </android.support.wearable.view.CardFrame>
+        </android.support.wearable.view.CardScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            app:layout_box="top">
+
+            <!-- 中立 -->
+            <android.support.wearable.view.CircledImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="65dp"
+                android:id="@+id/bt_neutral"
+                android:background="@mipmap/ic_sentiment_neutral_white_48dp"
+                app:circle_radius="30dp" />
+
+            <!-- 不满意 -->
+            <android.support.wearable.view.CircledImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:id="@+id/bt_dissatisfied"
+                android:layout_marginRight="25dp"
+                android:background="@mipmap/ic_sentiment_very_dissatisfied_white_48dp"
+                app:circle_radius="30dp" />
+
+            <!-- 开心 -->
+            <android.support.wearable.view.CircledImageView
+                android:id="@+id/bt_happy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="50dp"
+                android:background="@mipmap/ic_mood_white_48dp"
+                app:circle_radius="30dp" />
+
+            <!-- 不开心 -->
+            <android.support.wearable.view.CircledImageView
+                android:id="@+id/bt_un_happy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/ic_mood_bad_white_48dp"
+                app:circle_radius="30dp" />
+
+        </FrameLayout>
+    </android.support.wearable.view.BoxInsetLayout>
+
+</FrameLayout>

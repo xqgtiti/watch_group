@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">wearTest</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+    <string name="start_up_mood_cn">心情如何？</string>
+    <string name="start_up_mood_en">How is your mood?</string>
+</resources>

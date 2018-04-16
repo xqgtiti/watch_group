@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/box_view_start_up"
+        android:layout_width="match_parent"
+        android:background="@mipmap/bg_mod6"
+        android:layout_height="match_parent"
+        tools:deviceIds="wear">
+
+    <android.support.wearable.view.CardScrollView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom">
+
+        <android.support.wearable.view.CardFrame
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="心情如何？ \n点击图标记录吧！\n                                             . "
+                android:textColor="#000000"
+                android:textSize="13sp" />
+        </android.support.wearable.view.CardFrame>
+    </android.support.wearable.view.CardScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        app:layout_box="top">
+
+        <!-- 中立 -->
+        <android.support.wearable.view.CircledImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="30dp"
+            android:background="@mipmap/ic_sentiment_neutral_white_48dp"
+            app:circle_radius="30dp" />
+
+
+        <!-- 开心 -->
+        <android.support.wearable.view.CircledImageView
+            android:id="@+id/mood_happy_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top|right"
+            android:layout_marginLeft="80dp"
+            android:background="@mipmap/ic_mood_white_48dp"
+            app:circle_radius="30dp" />
+
+        <!-- 不开心 -->
+        <android.support.wearable.view.CircledImageView
+            android:id="@+id/not_happy_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/ic_mood_bad_white_48dp"
+            app:circle_radius="30dp" />
+
+    </FrameLayout>
+</android.support.wearable.view.BoxInsetLayout>
